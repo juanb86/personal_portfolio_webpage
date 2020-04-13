@@ -27,6 +27,7 @@ ul {
     margin: auto;
 }
 
+
 /* Navigation */
 
 #navbar {
@@ -36,24 +37,77 @@ ul {
     height: 60px;
     padding: 20px;
     font-size: 13px;
-    background-color: green;
 }
 
 .logo {
     height: 50px;
-    background-color: red;
 }
 
 #navbar ul {
     display: flex;
 }
 
+#navbar ul li {
+    padding: 0 10px;
+}
+
+#navbar ul li a {
+    padding-bottom: 2px;
+}
+
+#navbar ul li a:hover {
+    border-bottom: 2px solid #262626;
+}
+
 .main-menu {
     flex: 1;
     margin-left: 20px;
-    background-color: yellow;
 }
 
-.right.menu {
-    background-color: blue;
+
+/* Showcase */
+
+.btn {
+    cursor: pointer;
+    display: inline-block;
+    border: 0;
+    font-weight: bold;
+    padding: 10px 20px;
+    background-color: #262626;
+    color: #fff;
+    font-size: 15px;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+#welcome-section {
+    width: 100%;
+    height: 400px;
+    background: url('images/background.jpg') no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: flex-end;
+    padding-bottom: 50px;
+    margin-bottom: 20px;
+}
+
+#welcome-section h1,
+#welcome-section p {
+    margin-bottom: 10px;
+}
+
+#welcome-section .btn {
+    margin-top: 20px;
+}
+
+
+/* Projects */
+
+.project-tile img {
+    width: 300px;
+    height: auto;
 }
