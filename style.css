@@ -5,17 +5,17 @@
 }
 
 body {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background: #fff;
-    color: #000;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #c5c6c7;
     font-size: 15px;
-    line-height: 1.5;
+    line-height: 1.2;
     background: url('images/background.jpg') no-repeat center top;
     background-size: 100vw 100vh;
+    background-color: #0b0c10;
 }
 
 a {
-    color: #262626;
+    color: #c5c6c7;
     text-decoration: none;
 }
 
@@ -29,22 +29,43 @@ ul {
     margin: auto;
 }
 
+.btn {
+    cursor: pointer;
+    display: inline-block;
+    border: solid;
+    font-weight: bold;
+    padding: 10px 20px;
+    color: #c5c6c7;
+    font-size: 18px;
+    border-width: 2px;
+    border-color: #66fcf1;
+}
+
+.btn:hover {
+    background-color: rgba(69, 162, 158, 0.5);
+}
+
+
 /* Navigation */
 
-#navbar {
+.var-back {
     position: fixed;
+    background: rgba(4, 4, 6, 0.8);
+    width: 100%;
+    height: 50px;
+}
+
+#navbar {
     width: 90%;
     max-width: 1100px;
+    margin: auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 60px;
-    padding: 20px;
-    font-size: 13px;
-}
-
-.logo {
-    height: 50px;
+    padding: 14px;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
 #navbar ul {
@@ -60,7 +81,7 @@ ul {
 }
 
 #navbar ul li a:hover {
-    border-bottom: 2px solid #262626;
+    border-bottom: 2px solid #45a29e;
 }
 
 .main-menu {
@@ -68,22 +89,8 @@ ul {
     margin-left: 20px;
 }
 
+
 /* Showcase */
-
-.btn {
-    cursor: pointer;
-    display: inline-block;
-    border: 0;
-    font-weight: bold;
-    padding: 10px 20px;
-    background-color: #262626;
-    color: #fff;
-    font-size: 15px;
-}
-
-.btn:hover {
-    opacity: 0.9;
-}
 
 #welcome-section {
     width: 100%;
@@ -95,12 +102,12 @@ ul {
     justify-content: center;
     padding-left: 15%;
     margin-bottom: 20px;
-    background-color: rgba(0, 200, 0, 0.5);
 }
 
 #welcome-section h1 {
     margin-bottom: 10px;
-    font-size: 40px;
+    font-size: 70px;
+    color: #66fcf1;
     text-transform: uppercase;
 }
 
@@ -110,9 +117,6 @@ ul {
     text-decoration: dashed;
 }
 
-#welcome-section .btn {
-    margin-top: 20px;
-}
 
 /* Projects */
 
@@ -126,6 +130,7 @@ ul {
     grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
 }
+
 
 /* Footer */
 
