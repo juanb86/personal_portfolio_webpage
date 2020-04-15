@@ -5,11 +5,13 @@
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background: #fff;
     color: #000;
     font-size: 15px;
     line-height: 1.5;
+    background: url('images/background.jpg') no-repeat center top;
+    background-size: 100vw 100vh;
 }
 
 a {
@@ -27,11 +29,12 @@ ul {
     margin: auto;
 }
 
-
 /* Navigation */
 
 #navbar {
     position: fixed;
+    width: 90%;
+    max-width: 1100px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -65,7 +68,6 @@ ul {
     margin-left: 20px;
 }
 
-
 /* Showcase */
 
 .btn {
@@ -86,26 +88,31 @@ ul {
 #welcome-section {
     width: 100%;
     height: 100vh;
-    background: url('images/background.jpg') no-repeat center center/cover;
-    background-size: 100vw;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: baseline;
     text-align: center;
-    justify-content: flex-end;
-    padding-bottom: 50px;
+    justify-content: center;
+    padding-left: 15%;
     margin-bottom: 20px;
+    background-color: rgba(0, 200, 0, 0.5);
 }
 
-#welcome-section h1,
+#welcome-section h1 {
+    margin-bottom: 10px;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
 #welcome-section p {
     margin-bottom: 10px;
+    font-size: 29px;
+    text-decoration: dashed;
 }
 
 #welcome-section .btn {
     margin-top: 20px;
 }
-
 
 /* Projects */
 
@@ -119,7 +126,6 @@ ul {
     grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
 }
-
 
 /* Footer */
 
