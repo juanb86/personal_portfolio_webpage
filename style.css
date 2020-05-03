@@ -148,6 +148,7 @@ ul {
     text-align: center;
     justify-content: center;
     padding-left: 15%;
+    margin-bottom: 6rem;
 }
 
 #welcome-section h1 {
@@ -167,19 +168,15 @@ ul {
     left: -3rem;
 }
 
+.line {
+    border: 2px solid var(--main-ebony_clay);
+    position: absolute;
+    width: 100vw;
+    top: 100vh;
+}
+
 
 /* Projects */
-
-.line {
-    border: solid;
-    border-width: 2px;
-    margin-bottom: 6rem;
-    left: -2000px;
-    position: relative;
-    width: 10000px;
-    border-color: var(--main-keppel);
-    margin-bottom: 6rem;
-}
 
 .container h2 {
     font-size: 4rem;
@@ -240,9 +237,10 @@ ul {
 }
 
 .link-div {
-    padding: 2rem 4rem;
+    padding: 2rem;
     width: 30%;
     text-align: center;
+    font-size: 2.2rem;
 }
 
 #profile-link {
